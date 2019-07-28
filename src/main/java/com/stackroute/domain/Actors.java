@@ -40,7 +40,6 @@ public class Actors {
         this.age = age;
     }
 
-//    SomeComment
 
     @Override
     public String toString() {

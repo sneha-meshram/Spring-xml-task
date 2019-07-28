@@ -8,14 +8,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
 /*
-For the Movie bean, delete the constructor based object injection in the bean definition file
-(beans.xml) that injects an Actor bean.
-Use autowire byName in the Movie bean to inject an Actor bean.
-Run the application.
-Create another Movie bean and try autowire byType.
-Run the application and note the exception thrown.
-Fix the Movie bean by removing autowire byType and using constructor injection instead.
-
+Implement ApplicationContextAware, BeanFactoryAware, BeanNameAware in the
+Movie class and print out their results..
  */
 
 
@@ -28,9 +22,6 @@ public class MovieDemo {
         Movie movie1=context.getBean("movie1",Movie.class);
         System.out.println(movie1.getActors());
 
-        Movie movie2=context.getBean("movie1",Movie.class);
-        System.out.println(movie2.getActors());
-        System.out.println((movie1==movie2));
 
     }
 }
