@@ -20,7 +20,6 @@ public class MovieDemo {
         System.out.println(movie2.getActors());
         System.out.println(movie1==movie2);
 
-
 //        //intance of interface IOC class
 //        XmlBeanFactory fac= new XmlBeanFactory(new ClassPathResource("beans.xml"));
 //        Movie movie1=fac.getBean("movie",Movie.class);
