@@ -8,6 +8,7 @@ import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+
 import java.util.List;
 
 public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactoryAware {

@@ -27,9 +27,13 @@
 
     </bean>
 
-
     <bean id="movie2" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor">
 
+    </bean>
+
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"
+              init-method="customInit"
+              destroy-method="customDestroy">
     </bean>
 
 </beans>
