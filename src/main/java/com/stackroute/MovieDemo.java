@@ -26,8 +26,5 @@ public class MovieDemo {
 //        System.out.println(movie1.getActors());
 //
 //
-
-
-
     }
 }
