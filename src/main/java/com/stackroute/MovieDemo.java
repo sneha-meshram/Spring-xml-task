@@ -8,8 +8,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
 /*
-Implement ApplicationContextAware, BeanFactoryAware, BeanNameAware in the
-Movie class and print out their results..
+Add a BeanLifecycleDemoBean class in com.stackroute.demo that implements
+InitializingBean and DisposableBean.
+Override the required methods to print out messages.
+Define BeanLifecycleDemoBean as a bean in beans.xml.
  */
 
 
