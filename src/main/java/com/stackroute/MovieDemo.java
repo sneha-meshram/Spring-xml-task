@@ -31,6 +31,8 @@ public class MovieDemo {
         //calling method for BeanLifecycleDemoBean class.
         ConfigurableApplicationContext context1=new ClassPathXmlApplicationContext("beans.xml");
         BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context1.getBean("beanLifecycleDemoBean");
+
+        //calling method of BeanPostProcessor class.
         BeanPostProcessor beanPostProcessor=context1.getBean("beanPostProcessorDemoBean", BeanPostProcessorDemoBean.class);
 
 

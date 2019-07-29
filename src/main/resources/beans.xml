@@ -31,11 +31,13 @@
 
     </bean>
 
+    <!--creating bean for BeanLifecycleDemoBean class -->
     <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"
               init-method="customInit"
               destroy-method="customDestroy">
     </bean>
 
+    <!--creating bean for BeanPostProcessorDemoBean class -->
     <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
 
 
