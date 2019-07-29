@@ -16,7 +16,7 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
         System.out.println("implementing the DisposableBean interface class");
     }
 
-    //customInit() created.
+    //customInit() created..
 
     public void customInit(){
         System.out.println("customInit() is invoked or initialize..");
