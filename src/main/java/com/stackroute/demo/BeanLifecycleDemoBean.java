@@ -5,7 +5,7 @@ import org.springframework.beans.factory.InitializingBean;
 
 public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
 
-
+    //overriding the method of InitializingBean, DisposableBean Interface.
     @Override
     public void destroy() throws Exception {
         System.out.println("implementing the InitializingBean Interface class");
