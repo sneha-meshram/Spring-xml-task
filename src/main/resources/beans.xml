@@ -36,4 +36,7 @@
               destroy-method="customDestroy">
     </bean>
 
+    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
+
+
 </beans>

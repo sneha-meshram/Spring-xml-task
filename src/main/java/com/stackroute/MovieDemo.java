@@ -1,8 +1,10 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Actors;
 import com.stackroute.domain.Movie;
 import com.stackroute.demo.BeanLifecycleDemoBean;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -29,7 +31,9 @@ public class MovieDemo {
         //calling method for BeanLifecycleDemoBean class.
         ConfigurableApplicationContext context1=new ClassPathXmlApplicationContext("beans.xml");
         BeanLifecycleDemoBean demoBean=(BeanLifecycleDemoBean) context1.getBean("beanLifecycleDemoBean");
-        context1.close();
+        BeanPostProcessor beanPostProcessor=context1.getBean("beanPostProcessorDemoBean", BeanPostProcessorDemoBean.class);
+
+
 
 
 
