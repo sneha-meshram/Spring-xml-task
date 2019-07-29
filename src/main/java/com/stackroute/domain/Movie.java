@@ -11,7 +11,7 @@ import org.springframework.context.ApplicationContextAware;
 
 import java.util.List;
 
-public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactoryAware {
+public class Movie  {
 
     List<Actors> actors;
 
@@ -35,26 +35,26 @@ public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactor
     }
 
     //overriding method of BeanFactory.
-
-    @Override
-    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("implementing the beanFactoryAware");
-    }
-
-    //overriding method of BeanName.
-
-    @Override
-    public void setBeanName(String str)
-    {
-        System.out.println("implementing BeanNameAware,bean name is " +str);
-    }
-
-    //overriding method of ApplicationContext.
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("implementing AppicationContextAware");
-    }
+//
+//    @Override
+//    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+//        System.out.println("implementing the beanFactoryAware");
+//    }
+//
+//    //overriding method of BeanName.
+//
+//    @Override
+//    public void setBeanName(String str)
+//    {
+//        System.out.println("implementing BeanNameAware,bean name is " +str);
+//    }
+//
+//    //overriding method of ApplicationContext.
+//
+//    @Override
+//    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+//        System.out.println("implementing AppicationContextAware");
+//    }
 
 
 }

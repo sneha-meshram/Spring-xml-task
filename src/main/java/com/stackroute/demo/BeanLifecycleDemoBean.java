@@ -6,14 +6,15 @@ import org.springframework.beans.factory.InitializingBean;
 public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
 
     //overriding the method of InitializingBean, DisposableBean Interface.
-    @Override
-    public void destroy() throws Exception {
-        System.out.println("implementing the InitializingBean Interface class");
-    }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("implementing the DisposableBean interface class");
+        System.out.println("set the properties");
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("properties detroy");
     }
 
     //customInit() created..
