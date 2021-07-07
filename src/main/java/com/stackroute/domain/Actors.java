@@ -15,7 +15,7 @@ public class Actors {
         this.gender=gender;
         this.age=age;
     }
-
+    //creating getter and setter
     public String getName() {
         return name;
     }
@@ -48,6 +48,5 @@ public class Actors {
                 ", age=" + age +
                 '}';
     }
-
 
 }
